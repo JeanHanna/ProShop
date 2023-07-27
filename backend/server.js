@@ -1,6 +1,9 @@
 import express from 'express';
-import products from './data/products.js'
-const port = 3001;
+import dotenv from 'dotenv';
+dotenv.config()
+import products from './data/products.js';
+
+const port = process.env.PORT || 5000;
 
 const app = express();
 
