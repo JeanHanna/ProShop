@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
-const productSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
   },
   email: {
     type: String,
-    requires: true,
+    required: true,
     unique: true,
   },
   password: {
@@ -15,7 +15,7 @@ const productSchema = new mongoose.Schema({
   },
   isAdimin: {
     type: Boolean,
-    requires: true,
+    required: true,
     default: false,
   },
 },{timestamps:true,
