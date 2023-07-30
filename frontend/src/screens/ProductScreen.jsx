@@ -1,10 +1,11 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import {Row,Col,Image,ListGroup,Card,Button} from 'react-bootstrap';
 import Rating from '../component/Rating';
+import Loader from '../component/Loader';
 import { useGetProductDetailsQuery } from '../silices/productApiSlice';
+import Message from '../component/Message';
 
 const ProductScreen = () => {
 
@@ -15,8 +16,10 @@ const ProductScreen = () => {
     <>
       <Link className='btn brn-light my-3' to="/">Go Back</Link>
        { isLoading ?(
-        <h2>Loading</h2>
-       ) : error ? (<div>{error?.data?.message || error.error}</div>) : (
+        <h2><Loader /></h2>
+       ) : error ? (
+        <Message variant='danger'>{error?.data?.message || error.error}
+        </Message>) : (
               <Row>
               <Col md={5}>
                 <Image src={product.image} alt={product.name} fluid />
