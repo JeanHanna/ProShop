@@ -2,7 +2,7 @@ import { Row, Col} from 'react-bootstrap';
 import Product from '../component/Product';
 import Loader from '../component/Loader';
 import Message from '../component/Message'
-import { useGetProductsQuery } from '../silices/productApiSlice';
+import { useGetProductsQuery } from '../slices/productApiSlice';
 
 
 const HomeScreen = () => {

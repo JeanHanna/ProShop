@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {Row,Col,Image,ListGroup,Card,Button} from 'react-bootstrap';
 import Rating from '../component/Rating';
 import Loader from '../component/Loader';
-import { useGetProductDetailsQuery } from '../silices/productApiSlice';
+import { useGetProductDetailsQuery } from '../slices/productApiSlice';
 import Message from '../component/Message';
 
 const ProductScreen = () => {
