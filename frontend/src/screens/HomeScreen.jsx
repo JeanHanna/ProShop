@@ -1,7 +1,7 @@
 import { Row, Col} from 'react-bootstrap';
-import Product from '../component/Product';
-import Loader from '../component/Loader';
-import Message from '../component/Message'
+import Product from '../components/Product';
+import Loader from '../components/Loader';
+import Message from '../components/Message'
 import { useGetProductsQuery } from '../slices/productApiSlice';
 
 

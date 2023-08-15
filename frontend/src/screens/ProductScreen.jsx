@@ -3,10 +3,10 @@ import { useParams,useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import {Link} from 'react-router-dom';
 import {Form,Row,Col,Image,ListGroup,Card,Button} from 'react-bootstrap';
-import Rating from '../component/Rating';
-import Loader from '../component/Loader';
+import Rating from '../components/Rating';
+import Loader from '../components/Loader';
 import { useGetProductDetailsQuery } from '../slices/productApiSlice';
-import Message from '../component/Message';
+import Message from '../components/Message';
 import { addToCart} from '../slices/cartSlice'
 
 const ProductScreen = () => {
